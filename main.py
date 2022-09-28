@@ -6,5 +6,5 @@ response = requests.get(url="https://www.empireonline.com/movies/features/best-m
 empire_webpage = response.text
 soup = BeautifulSoup(empire_webpage, "html.parser")
 
-articles = soup.find_all(name="em", class_="jsx")
-print(articles)
+data = soup.find_all(name="h3", class_="jsx-4245974604")
+print(data)
