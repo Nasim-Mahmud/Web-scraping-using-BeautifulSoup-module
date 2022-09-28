@@ -13,4 +13,3 @@ movie_titles = [movie.getText().replace("\n", "") for movie in movies]
 with open("movies.txt", mode="w") as file:
     for n in range(len(movie_titles)):
         file.write(f"{movie_titles[n]}\n")
-
