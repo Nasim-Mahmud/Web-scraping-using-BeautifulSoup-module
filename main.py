@@ -16,7 +16,7 @@ movies = soup.find_all(name="h3", class_="lister-item-header")
 #         movie_list.append(i)
 #     # items = movie.get_text()
 
-movie_titles = [movie.getText().strip() for movie in movies]
+movie_titles = [movie.getText().replace("\n", "") for movie in movies]
 print(movie_titles)
 
 
